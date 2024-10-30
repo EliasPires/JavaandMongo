@@ -7,6 +7,7 @@ import org.springframework.stereotype.Repository;
 import noxxit.mongoapplication.model.User;
 
 @Repository
-public interface UserRepository extends MongoRepository<User, Long> {
+public interface UserRepository extends MongoRepository<User, String> {
+
     
 }
