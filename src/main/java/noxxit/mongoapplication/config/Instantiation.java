@@ -47,6 +47,9 @@ public class Instantiation implements CommandLineRunner {
 
         // Salva posts no banco de dados
         postRepository.saveAll(Arrays.asList(post1, post2));
+
+        elias.getPosts().addAll(Arrays.asList(post1, post2));
+        userRepository.save(elias);
     }
     
 }
